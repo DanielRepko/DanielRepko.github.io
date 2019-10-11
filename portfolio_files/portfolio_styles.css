@@ -18,7 +18,7 @@ _____________________
 body{
 	font-family: Trebuchet MS;
 	color: #82BD16;
-	background-color: #263541
+	background-color: #263541;
 }
 
 
@@ -31,3 +31,7 @@ blockquote{
 
 /**************************************** Images */
 
+img{
+	border-radius: 15px;
+	box-shadow: 5px 5px #1d2830;/*#1d2830;*/
+}
