@@ -1,0 +1,400 @@
+/********************
+
+Author: Daniel Repko
+
+*********************
+
+Table of Contents
+
+1......button styles
+2......body styles
+3......nav styles
+4......header styles
+5......section styles
+6......paragraph styles
+7......tr-8r styles
+_____________________
+
+/* button styles */
+
+input#obiwan{
+	background-image: url(obiwan_hilt.jpg) ;
+	background-size: cover ;
+	background-repeat: no-repeat ;
+	background-position: 0px -26px ;
+	
+	position: relative ; top: 98.5px ;
+	
+	border: none ;
+	
+	width: 388px ;
+	height: 91px ;
+}
+
+
+input#obiwan:active{
+	border: 2px solid rgb(0, 213, 255) ;
+}
+
+
+
+input#yoda{
+	background-image: url(yoda_hilt.jpg) ;
+	background-size: cover ;
+	background-size: 34em 15em ;
+	background-repeat: no-repeat ;
+	background-position: -31px -53px ;
+	
+	position: relative ; top: 84.5px ;
+	
+	border: none ;
+	
+	-webkit-transform:scaleX(-1);
+    -moz-transform:scaleX(-1);
+    -ms-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1) ;
+	
+	width: 388px ;
+	height: 91px ;
+}
+
+input#yoda:active{
+	border: 2px solid rgb(0, 255, 61) ;
+}
+
+
+
+input#vader{
+	background-image: url(vader_hilt.jpg) ;
+	background-size: cover ;
+	background-repeat: no-repeat ;
+	background-position: 0px -22px ;
+	
+	position: relative ; top: 85.5px ;
+	
+	border: none ;
+	
+	width: 388px ;
+	height: 91px ;
+	
+	
+}
+
+input#vader:active{
+	border: 2px solid rgb(255,0,0) ;
+}
+
+
+
+input#windu{
+	background-image: url(windu_hilt.jpg) ;
+	background-size: cover ;
+	background-repeat: no-repeat ;
+	background-position: 0px -95px ;
+	
+	position: relative ; top: 85.5px ;
+	
+	border: none ;
+	
+	width: 388px ;
+	height: 91px ;
+	
+	
+}
+
+input#windu:active{
+	border: 2px solid rgb(187, 0, 255) ;
+}
+
+
+
+input.hilt{
+	display: block ;
+}
+
+
+/* body styles */
+
+body{
+	background-image: url(stars.png) ;
+	background-size: contain ;
+}
+
+/* nav styles */
+
+nav.horizontal li{
+	color: rgb(255, 188, 0) ;
+	list-style-type: none ;
+	float: left ;
+	text-align: center ;
+	font-weight: bold ;
+	font-family: Rockwell ;
+	
+	
+	margin-right: 32px ;
+	margin-left: 32px ;
+	
+	border: 5px solid rgb(255, 232, 0) ;
+	padding: 5px ;
+	
+	
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+nav.horizontal li:hover{
+	color: rgb(255,255,0) ;
+	border-color: rgb(255, 188, 0) ;
+}
+
+nav{
+	clear: right ;
+}
+
+
+/* header styles */
+
+h3{
+	color: rgb(255, 188, 0) ;
+	text-align: center ;
+	font-weight: bold ;
+	font-family: Rockwell ;
+}
+
+/* section styles */
+
+section#blue{
+	background: linear-gradient(blue, white 10px, white 70px, blue) ;
+	width: 100px ;
+	height: 81px ;
+	
+	transition: width 500ms ;
+	
+	-webkit-filter: blur(2px) ;
+	filter: blur(2px) ;
+	
+	position: relative ;
+	z-index: -1 ;
+	
+	-webkit-border-radius: 65px;
+	-moz-border-radius: 65px;
+	border-radius: 65px;
+	
+	margin-top: 13px ;
+	margin-bottom: -13px ;
+}
+
+section#blue.active{
+	width: 1760px ;	
+}
+
+
+
+section#green{
+	background: linear-gradient(green, white 10px, white 70px, green) ;
+	width: 100px ;
+	height: 81px ;
+	
+	position: relative ;
+	-webkit-filter: blur(2px) ;
+	filter: blur(2px) ;
+	z-index: -1 ;
+	
+	transition: width 500ms ;
+	
+	-webkit-border-radius: 65px;
+	-moz-border-radius: 65px;
+	border-radius: 65px;
+	
+	margin-bottom: -13px ;
+}
+
+section#green.active{
+	width: 1760px ;	
+}
+
+
+
+section#red{
+	background: linear-gradient(red, white 10px, white 70px, red) ;
+	width: 100px ;
+	height: 81px ;
+	
+	position: relative ;
+	-webkit-filter: blur(2px) ;
+	filter: blur(2px) ;
+	z-index: -1 ;
+	
+	transition: width 500ms ;
+	
+	-webkit-border-radius: 65px;
+	-moz-border-radius: 65px;
+	border-radius: 65px;
+	
+	
+	margin-bottom: -13px ;
+}
+
+section#red.active{
+	width: 1760px ;	
+}
+
+section#purple{
+	background: linear-gradient(purple, white 10px, white 70px, purple) ;
+	width: 100px ;
+	height: 81px ;
+	
+	position: relative ;
+	-webkit-filter: blur(2px) ;
+	filter: blur(2px) ;
+	z-index: -1 ;
+	
+	transition: width 500ms ;
+	
+	-webkit-border-radius: 65px;
+	-moz-border-radius: 65px;
+	border-radius: 65px;
+	
+}
+
+section#purple.active{
+	width: 1760px ;	
+}
+
+
+
+/* paragraph styles */
+
+p{
+	font-family: Rockwell ;
+}
+
+p:first-of-type{
+	position: absolute ; top: 192px ; left: 896px ;
+	display: none ;
+}
+p:nth-of-type(2){
+	position: absolute ; top: 240px ; left: 720px ;
+	display: none ;
+}
+
+p:first-of-type.active{
+	display: block ;
+}
+p:nth-of-type(2).active{
+	display: block ;
+}
+
+
+
+p:nth-of-type(3){
+	position: absolute ; top: 352px ; left: 934.4px ;
+	display: none ;
+}
+p:nth-of-type(4){
+	position: absolute ; top: 400px ; left: 685px ;
+	display: none ;
+}
+p:nth-of-type(3).active{
+	display: block ;
+}
+p:nth-of-type(4).active{
+	display: block ;
+}
+
+
+
+p:nth-of-type(5){
+	position: absolute ; top: 512px ; left: 912px ;
+	display: none ;
+}
+p:nth-of-type(6){
+	position: absolute ; top: 560px ; left: 728px ;
+	display: none ;
+}
+p:nth-of-type(5).active{
+	display: block ;
+}
+p:nth-of-type(6).active{
+	display: block ;
+}
+
+
+
+p:nth-of-type(7){
+	position: absolute ; top: 672px ; left: 912px ;
+	display: none ;
+}
+p:last-of-type{
+	position: absolute ; top: 719px ; left: 762px ;
+	display: none ;
+}
+
+p:nth-of-type(7).active{
+	display: block ;
+}
+p:last-of-type.active{
+	display: block ;
+}
+
+
+
+/* tr-8r styles */
+
+#spin1{
+	position: absolute ; left: 0 ; bottom: 0 ;
+	width: 245px ;
+}
+
+#text1{
+	position: absolute ; left: 215px ; bottom: 190px ;
+	color: white ;
+	display: none ;
+	font-family: "Comic Sans MS" ;
+}
+
+#spin1:hover + #text1{
+	display: block ;
+}
+
+#spin2{
+	position: absolute ; right: 0 ; bottom: 0 ;
+	width: 245px ;
+	
+	-webkit-transform:scaleX(-1);
+    -moz-transform:scaleX(-1);
+    -ms-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1) ;
+}
+
+#text2{
+	position: absolute ; right: 215px ; bottom: 190px ;
+	color: white ;
+	display: none ;
+	font-family: "Comic Sans MS" ;
+}
+
+#spin2:hover + #text2{
+	display: block ;
+}
+
+#traitor{
+	position: absolute ; left: 610px ; bottom: 0 ;
+	height: 190px ;
+	width: 700px ;
+}
+
+#text3{
+	position: absolute ; left: 810px ; bottom: 200px ;
+	color: white ;
+	display: none ;
+	font-family: "Comic Sans MS" ;
+}
+
+#traitor:hover + #text3{
+	display: block ;
+}
+

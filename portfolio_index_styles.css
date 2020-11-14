@@ -1,0 +1,243 @@
+/********************
+
+Author: Daniel Repko
+
+*********************
+
+Table of Contents
+
+...... Body 
+...... Header
+...... Previous Work
+...... Tools and Skills
+...... Work Experience
+...... References
+...... Section Titles
+...... Footer
+...... Media Query
+_____________________
+
+********************/
+
+
+/**************************************** Body */
+body {
+	font-family: Trebuchet MS;
+	background: #263541;
+	color: #82BD16;
+}
+
+/**************************************** Header */
+#contact_phone{
+	margin-left: 4%;
+}
+
+#header_title_area{
+	background: #74AD1D;
+	margin-top: -1rem;
+}
+
+#header_title{
+	color: #345000;
+	font-size: 3em;
+}
+
+#header_contact_area{
+	background: #6E932B;
+	color: #345000;
+}
+
+
+/**************************************** Previous Work */
+.work_figure{
+	background: #262626;
+    text-align: center;
+}
+
+
+.work_year {
+	font-size: 1.5vw;
+	color: #0EC4C4;
+}
+
+.work_pic.lightsabers{
+	width: 90%;
+}
+
+.work_pic.connect_four{
+	width: 69.2%;
+}
+
+.work_pic.mobile{
+	width: 40%;
+}
+
+.work_link{
+	width: 100%;
+	color: white;
+	
+}
+
+.work_title{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+    right: 0;
+	background-color: #1a57ba;
+	opacity: 0;
+}
+
+.work_title:hover{
+	opacity: 0.93;
+}
+
+.work_title h1{
+	font-size: 2vw;
+}
+
+.work_title.lightsabers h1 {
+	margin-top: 25%;
+}
+
+.work_title.connect_four h1 {
+	margin-top: 20%;
+}
+
+.work_title.mobile h1 {
+	margin-top: 35%;
+}
+
+.work_pic_mobile + .work_title h1 {
+	margin-top: 35%;
+}
+
+br{
+    display: none;
+}
+
+/**************************************** Tools and Skills */
+#tools_skills li{
+	font-size: 1.2em;
+	list-style: none;
+}
+
+#tools_skills li::before{
+	content: "\2022";
+	color: #0EC4C4;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
+#tools_skills h2{
+	margin-bottom: 0.5em;
+}
+
+/**************************************** Work Experience */
+#work_experience h4{
+	color: #6E932B;
+}
+
+#work_experience h3{
+	color: #74AD1D;
+}
+
+#work_experience li{
+	list-style: none;
+}
+
+#work_experience li::before{
+	content: "\2022";
+	color: #0EC4C4;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
+
+/**************************************** References */
+#references li{
+	list-style-type: none;
+}
+
+#references span{
+	color: #0EC4C4;
+}
+
+#references ul{
+    padding-left: 2.5em;
+    margin-top: 0.5em;
+}
+
+/**************************************** Section Titles */
+.section_title{
+	text-decoration: underline;
+	text-decoration-color: #0EC4C4;
+	color: #82BD16;
+}
+.section_title::after{
+	content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+}
+
+/**************************************** Footer */
+footer{
+	background: #0EC4C4;
+	height: 3em;
+}
+
+/**************************************** Media Query */
+@media only screen and (max-width: 600px){     
+    #header_contact_area{
+        font-size: 3vw;
+    }
+    
+    #contact_phone{
+	   margin-left: 1%;
+    }
+    
+    .section_title{
+        text-align: center;
+    }
+    
+    .section_title::after{
+	   content: "";   
+    }
+    
+    #tools_skills ul{
+       margin-right: 0;
+    }
+    
+    #work_experience h3,h4{
+        text-align: center;
+    }
+    
+    #work-experience ul{
+        text-align: left;
+    }
+    
+    #references ul{
+        text-align: center;
+        font-size: 2.659vw;
+    }
+    
+}
+
+@media only screen and (max-width: 650px){  
+    br{
+        display: block;
+    }
+    
+    .work_title h1{
+        font-size: 4vw;
+    }
+    
+    .work_title.mobile h1 {
+	   margin-top: 30%;
+    }
+    
+    .work_year {
+	   font-size: 3.5vw;
+    }
+}
+
