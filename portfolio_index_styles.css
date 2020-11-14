@@ -120,6 +120,7 @@ br{
 #tools_skills li{
 	font-size: 1.2em;
 	list-style: none;
+	margin-bottom: 0.3em;
 }
 
 #tools_skills li::before{
@@ -201,7 +202,11 @@ footer{
     }
     
     .section_title::after{
-	   content: "";   
+	   content: "\00a0\00a0";   
+    }
+
+	.section_title::before{
+	   content: "\00a0\00a0";   
     }
     
     #tools_skills ul{
