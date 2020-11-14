@@ -7,6 +7,7 @@ Author: Daniel Repko
 Table of Contents
 
 ...... Body 
+...... Main Columns
 ...... Header
 ...... Previous Work
 ...... Tools and Skills
@@ -25,6 +26,18 @@ body {
 	font-family: Trebuchet MS;
 	background: #263541;
 	color: #82BD16;
+}
+
+/**************************************** Main Columns */
+
+#main_column_left{
+	width: 30%;
+	float: left;
+}
+
+#main_column_right {
+	width: 70%;
+	float: right;
 }
 
 /**************************************** Header */
