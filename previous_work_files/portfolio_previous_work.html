@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link href="portfolio_previous_work_styles.css" rel="stylesheet" type="text/css" />
+		<link href="grid.css" rel="stylesheet" type="text/css"/>
+		<link href="reset.css" rel="stylesheet" type="text/css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title id="previous_work_title"></title>
+	</head>
+	<body class="ui padded grid" onLoad="checkPage()">
+		<section id="project_info" class="six wide column">
+			<h1 id="project_name">Project Name</h1>
+			<h2 id="project_date">Year Completed</h2>
+            <p id="project_desc"></p>
+		</section>
+		
+		<section id="project_sample" class="ten wide column">
+			<section id="main_pic_section" class="sixteen wide column">
+				<img src="" id="main_pic" class="main_pic"/>
+			</section>
+			
+			<div class="ui grid" id="sample_grid">
+				<section id="sample_pics_section" class="four column row">
+					<div id="sample_div1" class="centered column sample_div">
+						<img src="" id="sample_pic1" class="sample_pic"/>
+					</div>
+				
+					<div id="sample_div2" class="centered column sample_div">
+						<img src="" id="sample_pic2" class="sample_pic"/>
+					</div>
+				
+					<div id="sample_div3" class="centered column sample_div">
+						<img src="" id="sample_pic3" class="sample_pic"/>			
+					</div>
+				</section>
+			</div>
+		</section>
+
+		<script src="previous_work_script.js"></script>
+		
+		<script>
+			var projectSample = document.getElementById("project_sample");
+			var mainPicSection = document.getElementById("main_pic_section");
+			var samplePicsSection = document.getElementById("sample_pics_section");
+			var projectInfo = document.getElementById("project_info");
+            var sampleGrid = document.getElementById("sample_grid");
+			
+			function previousWorkMediaQuery(screen) {
+                if (screen.matches) {
+					projectInfo.setAttribute("class", "sixteen wide column");
+					projectSample.setAttribute("class", "sixteen wide column");
+					projectSample.style.position = "static";
+;                   mainPicSection.style.display = "none";
+					samplePicsSection.setAttribute("class", "one column row");
+					samplePicsSection.style.background = "#0EC4C4";
+					projectSample.style.background = "#0EC4C4";
+                    sampleGrid.style.position = "static";
+                } else {
+					projectInfo.setAttribute("class", "six wide column");
+					projectSample.setAttribute("class", "ten wide column");
+					projectSample.style.position = "fixed";
+                    mainPicSection.style.display = "block";
+					samplePicsSection.setAttribute("class", "four column row");
+					samplePicsSection.style.background = "#263541";
+					projectSample.style.background = "#262626";
+                    sampleGrid.style.position = "fixed";
+                }
+            }
+
+            var screen = window.matchMedia("(max-width: 700px)");
+            previousWorkMediaQuery(screen);
+            screen.addListener(previousWorkMediaQuery);
+
+		</script>
+	</body>
+</html>
+
+
+<!-- this image was retrieved from "" -->
+<!-- <script src=""></script> -->

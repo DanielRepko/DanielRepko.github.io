@@ -1,0 +1,106 @@
+/********************
+
+Author: Daniel Repko
+
+*********************
+
+Table of Contents
+
+...... body
+...... Project Pics
+...... Project Info
+_____________________
+
+********************/
+
+
+/**************************************** Body */
+body {
+	font-family: Trebuchet MS;
+	background: #0EC4C4;
+	color: #345000;
+}
+
+/**************************************** Project Pics */
+.sample_pic.mobile{
+	width: 40%;
+	min-width: 5.2em;
+}
+
+.sample_pic.regular{
+	width: 95%;
+	min-width: 5.1875em;
+}
+
+
+.sample_div{
+	text-align: center;
+	background-color: #262626;
+	cursor: pointer;
+
+}
+
+#sample_pics_section{
+	background: #263541;
+}
+
+#sample_grid{
+    position: fixed;
+    bottom: 0;
+    padding-top: 0;
+}
+
+.main_pic.mobile{
+	width: 30%;
+	min-width: 17.4em;
+}
+
+.main_pic.regular{
+	width: 74%;
+}
+
+#main_pic_section{
+	text-align: center;	
+    overflow: auto;
+    position: absolute;
+    bottom: 28%;
+	top: 5vh;
+	left: 8%;
+}
+
+#project_sample{
+	background-color: #262626;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+
+/**************************************** Project Info */
+#project_name{
+	text-align: center;
+	background: #74AD1D;
+	margin: 0;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+#project_date{
+	text-align: center;
+	background: #74AD1D;
+	margin: 0;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+#project_desc{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	color: #262626;
+}
+
+#project_info{
+	padding: 0;
+	background: #6E932B;
+}
+	

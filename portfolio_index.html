@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- this and linked pages made using UI Semantic -->
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link href="portfolio_index_styles.css" rel="stylesheet" type="text/css"/>
+		<link href="grid.css" rel="stylesheet" type="text/css"/>
+		<link href="reset.css" rel="stylesheet" type="text/css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Daniel Repko: App Developer</title>
+	</head>
+	<body class="ui padded grid">
+		<header class="row">
+			<section id="header_title_area" class="sixteen wide column">
+				<h1 id="header_title" >Daniel Repko</h1>
+			</section>
+			
+			<section id="header_contact_area" class="sixteen wide column">
+				<h4><span id="contact_email">Email: danielrepko07@gmail.com</span> <span id="contact_phone">Home Phone: </span></h4>
+			</section>			
+		</header>
+		
+		<section id="previous_work" class="ui padded grid">
+			<h2 class="section_title sixteen wide column">Previous Work</h2>
+			
+			<section class="three column centered row work_row">
+				<figure class="work_figure column">
+					<figcaption class="work_year">2016</figcaption>
+					<a href="previous_work_files/lightsaber_site/assignment9.html" class="work_link" target="_blank">
+						<img src="previous_work_files/lightsaber_site/lightsaber_site_screenshot.png" class="work_pic lightsabers"/><!--src="previous_work_files/lightsaber_site/lightsaber_site_screenshot.png"-->
+						<div class="work_title lightsabers">
+							<h1>Lightsabers</h1>
+						</div>
+					</a>
+				</figure>
+                
+                <br>
+                <br>
+                
+                <figure class="work_figure column">
+					<figcaption class="work_year">2017</figcaption>
+					<a href="" id="connect_four" class="work_link" onClick="loadConnectFour()">
+						<img src="previous_work_files/connect_four_photos/connect_four3.png" class="work_pic connect_four"/>
+						<div class="work_title connect_four">
+							<h1>Connected Activity of the 4th Kind</h1>
+						</div>
+					</a>
+				</figure>
+			</section>
+			
+			
+			<section class="three column centered row work_row">	
+                <figure class="work_figure column">
+					<figcaption class="work_year">2017</figcaption>
+					<a href="" id="pizza_palace" class="work_link" onClick="loadPizzaPalace()">
+						<img src="previous_work_files/pizza_palace_photos/pizza_palace1.png" class="work_pic mobile"/>
+						<div class="work_title mobile">
+							<h1>Pizza Palace</h1>
+						</div>
+					</a>
+				</figure>
+                
+                <br>
+                <br>				
+				
+				<figure class="work_figure column">
+					<figcaption class="work_year">2018</figcaption>
+					<a href="" id="step_ahead" class="work_link" onClick="loadStepAhead()">
+						<img src="previous_work_files/step_ahead_photos/step_ahead1.png" class="work_pic mobile"/>
+						<div class="work_title mobile">
+							<h1>Step Ahead</h1>
+						</div>
+					</a>
+				</figure>							
+			</section>					
+		</section>
+		
+		
+		<section id="tools_skills" class="row">
+			<h2 class="section_title sixteen wide column">Tools and Skills</h2>
+			
+			
+			<ul class="five wide centered column">
+				<li>HTML & CSS</li>
+				<li>Java</li>
+				<li>Swift</li>
+			</ul>
+			
+			
+			
+			<ul class="seven wide centered column">
+				<li>Adobe Illustrator</li>
+				<li>Xcode</li>
+				<li>Android Studio</li>
+			</ul>	
+			
+		</section>
+		
+		
+		<section id="work_experience" class="row">
+			<h2 class="section_title sixteen wide column">Work Experience</h2>
+			
+			<div class="fifteen wide centered column">
+				<h3>Total Aquatic Technician, East Side Mario's</h3>
+				<h4>November 2014 - Ongoing</h4>
+				<ul>
+					<li>Ensure proper sanitation of all dishes, eating/cooking utensils, pots and pans</li>
+					<li>Maintain overall cleanliness of work area</li>
+					<li>Communicate with cooks and servers to ensure that they are fully supplied with their needed items (i.e. pots and pans, cutlery, etc.)</li>
+				</ul>
+			</div>
+			
+			<div class="fifteen wide centered column">
+				<h3>Janitor, East Side Mario's</h3>
+				<h4>May 2018</h4>
+				<ul>
+					<li>Cleaning walls, shelfs, and floor of walk-in fridge</li>
+					<li>Scrubbing kitchen ceiling, ceiling vents</li>
+					<li>Re-stock shelves of fridge after cleaning</li>
+				</ul>
+			</div>			
+		</section>
+		
+		
+		<section id="references" class="row">
+			<h2 class="section_title sixteen wide column">References</h2>
+			
+
+			<ul class="sixteen wide column">
+				<li>
+					dfgadfadsfasdf <span>|</span> adsfasdfasdfasdfasdf <span>|</span> asdfasdfasfasd
+				</li>
+
+
+				<li>
+					dfgadfadsfasdf <span>|</span> adsfasdfasdfasdfasdf <span>|</span> asdfasdfasfasd
+				</li>
+
+
+				<li>
+					dfgadfadsfasdf <span>|</span> adsfasdfasdfasdfasdf <span>|</span> asdfasdfasfasd
+				</li>
+
+
+				<li>
+					dfgadfadsfasdf <span>|</span> adsfasdfasdfasdfasdf <span>|</span> asdfasdfasfasd
+				</li>
+			</ul>
+			
+		</section>
+		
+		
+		<footer class="sixteen wide column">
+		</footer>
+		
+		<script src="previous_work_template_script.js"></script>
+        <script>
+            var work_pics = document.getElementsByClassName("work_row");
+            function workPicsMediaQuery(screen) {
+                if (screen.matches) {
+                    work_pics.item(0).setAttribute("class", "one column row work_row");
+                    work_pics.item(1).setAttribute("class", "one column row work_row");
+                } else {
+                    work_pics.item(0).setAttribute("class", "three column centered row work_row");
+                    work_pics.item(1).setAttribute("class", "three column centered row work_row");
+                }
+            }
+
+            var screen = window.matchMedia("(max-width: 650px)");
+            workPicsMediaQuery(screen);
+            screen.addListener(workPicsMediaQuery);
+        </script>
+	</body>
+</html>
+
+
+<!-- this image was retrieved from "" -->
+<!-- <script src=""></script> -->
