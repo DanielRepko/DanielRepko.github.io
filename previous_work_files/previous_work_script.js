@@ -1,9 +1,22 @@
 function checkPage(){
-	if (window.name == "connect_four"){
+	if (window.name == "connect_four")
+	{
 		loadConnectFourInfo();
-	} else if (window.name == "pizza_palace"){
+	} 
+	else if (window.name == "pizza_palace")
+	{
 		loadPizzaPalaceInfo();
-	} else if (window.name == "step_ahead"){
+	} 
+	else if (window.name == "step_ahead")
+	{
+		loadStepAheadInfo();
+	}
+	else if (window.name == "monster_island")
+	{
+		loadStepAheadInfo();
+	}
+	else if (window.name == "pood_pood")
+	{
 		loadStepAheadInfo();
 	}
 }
@@ -114,12 +127,17 @@ function loadStepAheadInfo(){
 	mainPic.src = "step_ahead_photos/step_ahead1.png";
 	mainPic.setAttribute("class", "main_pic mobile");	
 	
+	var fs = require('fs');
+	fs.readFile('step_ahead_desc.txt', function(err, data)
+	{
+		projectDescription.innerHTML = data;
+	});
 	//setting the project description
-	projectDescription.innerHTML = "Step Ahead is an exercise assistance app and is the most advanced Android application that I have collaborated"+
+	/*projectDescription.innerHTML = "Step Ahead is an exercise assistance app and is the most advanced Android application that I have collaborated"+
 	" on. Developed my myself and one other teammate, the Step Ahead application allows the user to track info about their run such as distance traveled,"+
 	" calories burned (based on height and weight), duration of the run, what the weather was like, the time that they started, and any photos the user feels like taking. Once the user finishes their run,"+
 	" they can record how they felt, what kind of area they were in, their average heart rate, and any notes that they feel like adding to the record."+
 	" When the user saves their run, the recorded info is persistently stored in a Run Journal that the user can look back on at their leisure. The user can also set reminders for"+
 	" themselves to go on more runs or to do regular weight checks. For each weight check, the user can enter their new weight in the Weight Journals page, which not only shows a list of"+
-	" every past weight record, but also conatins a line graph showing the user their progress. The app also allows the user to quickly see any new tweets made by the Step Ahead twitter account.";
+	" every past weight record, but also conatins a line graph showing the user their progress. The app also allows the user to quickly see any new tweets made by the Step Ahead twitter account.";*/
 }  

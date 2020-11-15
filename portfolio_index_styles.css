@@ -60,7 +60,7 @@ body {
 	color: #0EC4C4;
 }
 
-.work_pic.lightsabers{
+.work_pic.fullscreen_pic {
 	width: 90%;
 }
 
@@ -101,7 +101,7 @@ body {
 }
 
 .work_title.connect_four h1 {
-	margin-top: 20%;
+	margin-top: 23%;
 }
 
 .work_title.mobile h1 {
