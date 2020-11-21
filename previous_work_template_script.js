@@ -12,3 +12,13 @@ function loadPizzaPalace() {
 function loadStepAhead() {
 	window.open("previous_work_files/portfolio_previous_work.html", "step_ahead");
 }
+
+//loading the page and naming the window monster_island
+function loadMonsterIsland() {
+	window.open("previous_work_files/portfolio_previous_work.html", "monster_island");
+}
+
+//loading the page and naming the window pood_pood
+function loadPoodPood() {
+	window.open("previous_work_files/portfolio_previous_work.html", "pood_pood");
+}
