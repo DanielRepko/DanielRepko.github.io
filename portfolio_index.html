@@ -28,8 +28,13 @@
 					<figcaption class="work_year">2016</figcaption>
 					<a href="previous_work_files/lightsaber_site/assignment9.html" class="work_link" target="_blank">
 						<img src="previous_work_files/lightsaber_site/lightsaber_site_screenshot.png" class="work_pic fullscreen_pic" />
-						<div class="work_title lightsabers">
+						<div class="work_blurb lightsabers">
 							<h1>Lightsabers</h1>
+							<p class="work_desc lightsabers">This is a website that I created as part of an assignment in my first few years of college. You can click on the 
+							lightsabers to see who owns that particular lightsaber, as well as others that use lightsabers of the same color. It may seem random 
+							and silly, but the main point of the assignment was just to  show what I had learned, and I find I can get much more motivated by an assignment when I can have 
+							some fun with it, which more often than not results in me making something silly.
+							</p>
 						</div>
 					</a>
 				</figure>
@@ -41,8 +46,11 @@
 					<figcaption class="work_year">2017</figcaption>
 					<a href="" id="connect_four" class="work_link" onClick="loadConnectFour()">
 						<img src="previous_work_files/connect_four_photos/connect_four3.png" class="work_pic connect_four" />
-						<div class="work_title connect_four">
+						<div class="work_blurb connect_four">
 							<h1>Connected Activity of the 4th Kind</h1>
+							<p class="work_desc connect_four">
+								A simple Connect Four clone created entirely using Java and JavaFX.
+							</p>
 						</div>
 					</a>
 				</figure>
@@ -54,8 +62,11 @@
 					<figcaption class="work_year">2017</figcaption>
 					<a href="" id="pizza_palace" class="work_link" onClick="loadPizzaPalace()">
 						<img src="previous_work_files/pizza_palace_photos/pizza_palace1.png" class="work_pic mobile" />
-						<div class="work_title mobile">
+						<div class="work_blurb mobile">
 							<h1>Pizza Palace</h1>
+							<p class="work_desc pizza_palace mobile">
+								A mock restaraunt app for android that allows you to order your own custom pizza, set a thirty minute delivery timer, and calculate the amount to tip.
+							</p>
 						</div>
 					</a>
 				</figure>
@@ -67,8 +78,11 @@
 					<figcaption class="work_year">2018</figcaption>
 					<a href="" id="step_ahead" class="work_link" onClick="loadStepAhead()">
 						<img src="previous_work_files/step_ahead_photos/step_ahead1.png" class="work_pic mobile" />
-						<div class="work_title mobile">
+						<div class="work_blurb mobile">
 							<h1>Step Ahead</h1>
+							<p class="work_desc step_ahead mobile">
+								An excercise assistance app for android that can track information about runs such as distance traveled, calories burned, and total time run.
+							</p>
 						</div>
 					</a>
 				</figure>
@@ -77,10 +91,13 @@
 			<section class="three column centered row work_row">
 				<figure class="work_figure column">
 					<figcaption class="work_year">2019</figcaption>
-					<a href="" class="work_link" onClick="loadMonsterIsland()">
+					<a href="" id="monster_island" class="work_link" onClick="loadMonsterIsland()">
 						<img src="previous_work_files/monster_island_photos/monster_island1.png" class="work_pic fullscreen_pic" />
-						<div class="work_title lightsabers">
+						<div class="work_blurb">
 							<h1>Monster Island</h1>
+							<p class="work_desc monster_island">
+								A children's adventure platformer whose main mechanic is creating and customizing your own playable monster.
+							</p>
 						</div>
 					</a>
 				</figure>
@@ -90,10 +107,14 @@
 
 				<figure class="work_figure column">
 					<figcaption class="work_year">2019 - Present</figcaption>
-					<a href="" id="connect_four" class="work_link" onClick="loadPoodPood()">
-						<img src="previous_work_files/connect_four_photos/connect_four3.png" class="work_pic connect_four" />
-						<div class="work_title connect_four">
+					<a href="" id="pood_pood" class="work_link" onClick="loadPoodPood()">
+						<img src="previous_work_files/pood_pood_photos/pood_pood1.png" class="work_pic fullscreen_pic" />
+						<div class="work_blurb">
 							<h1>Pood Pood</h1>
+							<p class="work_desc pood_pood">
+								A side project that I tinker with in my spare time. It is a puzzle platformer whose main mechanic involves
+								being able to move around in different ways depending on what perspective you are viewing the level from.
+							</p>
 						</div>
 					</a>
 				</figure>
@@ -201,9 +222,11 @@
                 if (screen.matches) {
                     work_pics.item(0).setAttribute("class", "one column row work_row");
                     work_pics.item(1).setAttribute("class", "one column row work_row");
+                    work_pics.item(2).setAttribute("class", "one column row work_row");
                 } else {
                     work_pics.item(0).setAttribute("class", "three column centered row work_row");
                     work_pics.item(1).setAttribute("class", "three column centered row work_row");
+                    work_pics.item(2).setAttribute("class", "three column centered row work_row");
                 }
             }
 

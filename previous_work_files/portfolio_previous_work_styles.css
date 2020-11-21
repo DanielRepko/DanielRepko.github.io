@@ -40,6 +40,20 @@ body {
 
 }
 
+.sample_pic_shade {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background-color: #1a57ba;
+	opacity: 0;
+}
+
+.sample_pic_shade:hover {
+	opacity: 0.4;
+}
+
 #sample_pics_section{
 	background: #263541;
 }
@@ -51,12 +65,12 @@ body {
 }
 
 .main_pic.mobile{
-	width: 30%;
+	width: 34%;
 	min-width: 17.4em;
 }
 
 .main_pic.regular{
-	width: 74%;
+	width: 90%;
 }
 
 #main_pic_section{
@@ -97,6 +111,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	color: #262626;
+	font-size: 1.6em;
 }
 
 #project_info{
