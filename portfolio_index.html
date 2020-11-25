@@ -1,14 +1,15 @@
 ﻿<!DOCTYPE html>
 <!-- this and linked pages made using UI Semantic -->
 <html>
-	<head>
-		<meta charset="UTF-8" />
-		<link href="portfolio_index_styles.css" rel="stylesheet" type="text/css"/>
-		<link href="grid.css" rel="stylesheet" type="text/css"/>
-		<link href="reset.css" rel="stylesheet" type="text/css"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>Daniel Repko: App Developer</title>
-	</head>
+<head>
+	<meta charset="UTF-8" />
+	<link href="portfolio_index_styles.css" rel="stylesheet" type="text/css" />
+	<link href="grid.css" rel="stylesheet" type="text/css" />
+	<link href="reset.css" rel="stylesheet" type="text/css" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Daniel Repko: App Developer</title>
+</head>
 	<body class="ui padded grid">
 		<header class="row">
 			<section id="header_title_area" class="sixteen wide column">
@@ -16,9 +17,41 @@
 			</section>
 			
 			<section id="header_contact_area" class="sixteen wide column">
-				<h4><span id="contact_email">Email: danielrepko07@gmail.com</span> <span id="contact_phone">Home Phone: </span></h4>
+				<h4><span id="contact_email">Email: danielrepko07@gmail.com</span>
+				<span id="linkedin">LinkedIn: <a href="https://www.linkedin.com/in/daniel-repko" target="_blank">https://www.linkedin.com/in/daniel-repko</a></span>
+				<span id="twitter">Twitter: <a href="https://twitter.com/RepkoDaniel" target="_blank">https://twitter.com/RepkoDaniel</a></span>
+				</h4>
 			</section>			
 		</header>
+
+		<section id="about_me" class="ui padded grid">
+			<h2 class="section_title sixteen wide column">About Me</h2>
+
+			<div id="about_me_body" class="ten wide column">
+				<p class="about_me">
+					Ever since I was a child, I have always wanted to go into a career that involved making things,
+					so for the longest time I said that I wanted to be an engineer without really knowing what that meant. It wasn't
+					until I reached high school that I decided I wanted to combine my desire to create things with my love of video
+					games, which lead to me pursuing a career in video game programming
+				</p>
+
+				<p class="about_me">
+					After graduating high school, I got my advanced diploma in Mobile Applications Development at St. Clair college,
+					mainly because it was the closest thing to video game programming that they had there. It was in this program where
+					I, with the help of one other person, created my first ever full game (see Figure 1) for the final capstone project.
+					After finishing that, I decided I wanted to specialize more in video game specific programming, and so I left home to
+					study at St. Lawrence college, enrolling in their Game Programming course, of which I am currently a second year student.
+				</p>
+
+				<p class="about_me">
+					I am interested in nearly every aspect of the game making process, from the fundamentals of game theory, to the
+					intricacies of game design, to the technical logic of programming. I find myself most fascinated with the subtle nuances
+					of creating a good user interface, and so I tend to consider myself to be a bit of a UI snob.
+				</p>
+			</div>
+		</section>
+
+		<section id="previous_work" class="ui padded grid">
 		
 		<section id="previous_work" class="ui padded grid">
 			<h2 class="section_title sixteen wide column">Previous Work (hover and click for more)</h2>
@@ -123,8 +156,7 @@
 		
 		
 		<section id="tools_skills" class="row">
-			<h2 class="section_title sixteen wide column">Tools and Skills</h2>
-			
+			<h2 class="section_title sixteen wide column">Tools and Skills</h2>			
 			
 			<ul class="five wide centered column">
 				<li>C#</li>
@@ -136,14 +168,13 @@
 			
 			
 			
-			<ul class="seven wide centered column">
+			<ul class="eight wide centered column">
 				<li>Swift</li>
 				<li>Unity</li>
 				<li>Xcode</li>
 				<li>Android Studio</li>
 				<li>Adobe Illustrator</li>
-			</ul>	
-			
+			</ul>				
 		</section>
 		
 		
@@ -184,31 +215,18 @@
 		</section>
 		
 		
-		<section id="references" class="row">
-			<h2 class="section_title sixteen wide column">References</h2>
-			
+		<section id="resume_section" class="row">
+			<h2 class="section_title sixteen wide column">Resume</h2>
 
-			<ul class="sixteen wide column">
-				<li>
-					dfgadfadsfasdf <span>|</span> adsfasdfasdfasdfasdf <span>|</span> asdfasdfasfasd
-				</li>
+			<h4 class="fifteen wide centered column">
+			Download: 
+			<a id="resume_download_DOCX" href="resume.docx" download>DOCX</a> 
+			<a id="resume_download_PDF" href="resume.pdf" target="_blank">PDF</a>
+			</h4>
 
-
-				<li>
-					dfgadfadsfasdf <span>|</span> adsfasdfasdfasdfasdf <span>|</span> asdfasdfasfasd
-				</li>
-
-
-				<li>
-					dfgadfadsfasdf <span>|</span> adsfasdfasdfasdfasdf <span>|</span> asdfasdfasfasd
-				</li>
-
-
-				<li>
-					dfgadfadsfasdf <span>|</span> adsfasdfasdfasdfasdf <span>|</span> asdfasdfasfasd
-				</li>
-			</ul>
-			
+			<div class="fifteen wide centered column">
+				<iframe id="resume_iframe" src="resume.pdf"></iframe>
+			</div>
 		</section>
 		
 		

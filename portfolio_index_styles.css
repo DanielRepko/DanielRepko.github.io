@@ -8,10 +8,11 @@ Table of Contents
 
 ...... Body 
 ...... Header
+...... About Me
 ...... Previous Work
 ...... Tools and Skills
 ...... Work Experience
-...... References
+...... Resume
 ...... Section Titles
 ...... Footer
 ...... Media Query
@@ -28,8 +29,12 @@ body {
 }
 
 /**************************************** Header */
-#contact_phone{
+#linkedin{
 	margin-left: 4%;
+}
+
+#twitter{
+	margin-left: 2%;
 }
 
 #header_title_area{
@@ -46,6 +51,17 @@ body {
 	background: #6E932B;
 	color: #345000;
 }
+
+#header_contact_area a {
+	color: #2b4201;
+}
+
+/**************************************** About Me */
+#about_me_body{
+	font-size: 1.5em;
+}
+
+
 
 
 /**************************************** Previous Work */
@@ -165,22 +181,34 @@ br{
 }
 
 
-/**************************************** References */
-#references li{
-	list-style-type: none;
+/**************************************** Resume */
+#resume_iframe{
+	width: 50em;
+	height: 60em;
+	border: none;
 }
 
-#references span{
-	color: #0EC4C4;
+#resume_section h4{
+	margin-top: 1em;
+	margin-bottom: .5em;
 }
 
-#references ul{
-    padding-left: 2.5em;
-    margin-top: 0.5em;
+#resume_section a {
+	color: #4e7507;
 }
+
+#resume_download_DOCX{
+	margin-left: 2em;
+}
+
+#resume_download_PDF {
+	margin-left: 1em;
+}
+
+
 
 /**************************************** Section Titles */
-.section_title{
+.section_title {
 	text-decoration: underline;
 	text-decoration-color: #0EC4C4;
 	color: #82BD16;
@@ -229,10 +257,6 @@ footer{
         text-align: left;
     }
     
-    #references ul{
-        text-align: center;
-        font-size: 2.659vw;
-    }
     
 }
 
