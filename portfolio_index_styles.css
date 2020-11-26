@@ -295,7 +295,7 @@ br{
 #work_experience li::before{
 	content: "\2022";
 	color: #0EC4C4;
-	display: inline-block;
+	display: inline-block; 
 	width: 1em;
 	margin-left: -1em;
 }
