@@ -190,7 +190,6 @@ header h4{
     text-align: center;
 }
 
-
 .work_year {
 	font-size: 1.5vw;
 	color: #0EC4C4;
@@ -256,6 +255,11 @@ header h4{
 	font-size: 1vw;
 }
 
+#previous_work_prompt {
+	color: #4e6f12;
+	font-size: .8em !important;
+}
+
 br{
     display: none;
 }
@@ -300,8 +304,12 @@ br{
 	margin-left: -1em;
 }
 
-.experience_date{
+.experience_date.normal_view{
 	float: right;
+}
+
+.experience_date.mobile_view {
+	display: none;
 }
 
 
@@ -353,10 +361,10 @@ footer{
     #header_contact_area{
         font-size: 3vw;
     }
-    
-    #contact_phone{
-	   margin-left: 1%;
-    }
+
+	header h4 {
+		margin-left: 1% !important;
+	}
     
     .section_title{
         text-align: center;
@@ -382,7 +390,21 @@ footer{
         text-align: left;
     }
     
+	.experience_date.normal_view{
+		display: none;
+	}
+
+	.experience_date.mobile_view {
+		display: block;
+	}
     
+}
+
+
+@media only screen and (max-width: 500px) {
+	header h4{
+		font-size: .8em !important;
+	}
 }
 
 @media only screen and (max-width: 650px){  
@@ -391,7 +413,7 @@ footer{
     }
 
 	.work_blurb h1 {
-		font-size: 4vw;
+		font-size: 4vw !important;
 	}
 
 	.work_blurb.mobile h1 {
@@ -401,6 +423,10 @@ footer{
     .work_year {
 	   font-size: 3.5vw;
     }
+
+	#about_me figure {
+		width: 45%;
+	}
 }
 
 @media only screen and (max-width: 900px) 
