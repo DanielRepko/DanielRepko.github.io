@@ -156,7 +156,32 @@ header h4{
 	font-size: 1.5em;
 }
 
+#about_me1{
+	margin-top: 0;
+}
 
+#personal_pic{
+	width: 24%;
+	display: inline;
+	float: left;
+	margin: .5em;
+	margin-top: 0;
+	margin-left: 0;
+}
+
+#monster_island_sample {
+	width: 100%;
+}
+
+#about_me figure{
+	float: right;
+	width: 30%;
+	margin: 0;
+}
+
+#monster_island_caption{
+	font-size: .5em;
+}
 
 
 /**************************************** Previous Work */
@@ -204,31 +229,31 @@ header h4{
 }
 
 .work_blurb h1{
-	font-size: 2vw;
+	font-size: 1.4vw;
 }
 
 .work_desc.lightsabers {
-	font-size: 1vw;
+	font-size: .8vw;
 }
 
 .work_desc.connect_four{
-	margin-top: 8%;
+	margin-top: 6%;
 	font-size: 1.3vw;
 }
 
 .work_desc.mobile {
-	margin-top: 15%;
+	margin-top: 10%;
 	font-size: 1.3vw;
 }
 
 .work_desc.monster_island {
-	margin-top: 10%;
+	margin-top: 8%;
 	font-size: 1.3vw;
 }
 
 .work_desc.pood_pood{
 	margin-top: 6%;
-	font-size: 1.3vw;
+	font-size: 1vw;
 }
 
 br{
@@ -278,7 +303,7 @@ br{
 
 /**************************************** Resume */
 #resume_iframe{
-	width: 50em;
+	width: 100%;
 	height: 60em;
 	border: none;
 }
@@ -307,6 +332,7 @@ br{
 	text-decoration: underline;
 	text-decoration-color: #0EC4C4;
 	color: #82BD16;
+	font-size: 2em;
 }
 .section_title::after{
 	content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
@@ -398,5 +424,43 @@ footer{
 @media only screen and (max-width: 1080px) {
 	header h4 {
 		font-size: 1.4vw;
+	}
+}
+
+@media only screen and (max-width: 1150px) {
+	#quickfind_column {
+		display: none;
+	}
+
+	#main_column {
+		width: 100%;
+	}
+
+	.work_blurb h1 {
+		font-size: 2vw;
+	}
+
+	.work_desc.lightsabers {
+		font-size: 1vw;
+	}
+
+	.work_desc.connect_four {
+		margin-top: 8%;
+		font-size: 1.3vw;
+	}
+
+	.work_desc.mobile {
+		margin-top: 15%;
+		font-size: 1.3vw;
+	}
+
+	.work_desc.monster_island {
+		margin-top: 10%;
+		font-size: 1.3vw;
+	}
+
+	.work_desc.pood_pood {
+		margin-top: 6%;
+		font-size: 1.3vw;
 	}
 }
