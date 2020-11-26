@@ -300,6 +300,10 @@ br{
 	margin-left: -1em;
 }
 
+.experience_date{
+	float: right;
+}
+
 
 /**************************************** Resume */
 #resume_iframe{
