@@ -212,7 +212,7 @@ header h4{
 .work_link{
 	width: 100%;
 	color: white;
-	cursor: pointer;
+	cursor: pointer; 
 }
 
 .work_blurb {
