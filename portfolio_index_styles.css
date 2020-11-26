@@ -91,11 +91,7 @@ body {
 
 /**************************************** Header */
 header {
-	padding-bottom: 0 !important;
-	position: sticky !important;
-	position: -webkit-sticky !important;
-	top: 0;
-	left:0;
+	padding-bottom: 0 !important;	
 }
 
 header h4{
@@ -134,6 +130,10 @@ header h4{
 #header_is_compressed {
 	width: 30% !important;
 	margin-right: 70%;
+	position: sticky !important;
+	position: -webkit-sticky !important;
+	top: 0;
+	left: 0;
 }
 
 #header_is_compressed #header_title{
@@ -212,7 +212,7 @@ header h4{
 .work_link{
 	width: 100%;
 	color: white;
-	
+	cursor: pointer;
 }
 
 .work_blurb {
