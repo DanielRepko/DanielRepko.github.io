@@ -100,13 +100,14 @@ header h4{
 	margin-bottom: 1em;
 }
 
-#linkedin{
-	margin-left: 4%;
+#contact_email{
+	margin-right: 2%;
 }
 
-#twitter{
-	margin-left: 2%;
+#github{
+	margin-right: 2%;
 }
+
 
 #header_title_area{
 	background: #74AD1D;
