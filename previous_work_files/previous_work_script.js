@@ -232,7 +232,7 @@ function loadTourismPursuitInfo(){
 	mainPic.setAttribute("class", "main_pic mobile");	
 	
 	//setting the project description
-	projectDescription.innerHTML = "South Dundas Tourism Pursuit is a tourism app that was for Android and IOS (which is currently available on Google Play and Apple Store) that I developed using Unity alongside a class of 8 "+
+	projectDescription.innerHTML = "South Dundas Tourism Pursuit is a tourism app for Android and IOS (which is currently available on Google Play and Apple Store) that I developed using Unity alongside a class of 8 "+
 	"others as a capstone project. Our professor was able to make a deal with South Dundas Tourism so that they would let us create this app for "+
 	"them so that we could get the experience of working on a professional project, and in return they got a free tourism app. The entire class "+
 	"worked as one team, with our professor acting as the project manager. How the app works is that there are QR codes posted at certain tourist "+
