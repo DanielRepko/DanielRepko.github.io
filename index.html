@@ -18,8 +18,8 @@
 			
 			<section id="header_contact_area" class="sixteen wide column">
 				<h4 id="contact_email">Email: danielrepko07@gmail.com</h4>
+				<h4 id="github">Personal Github: <a href="https://github.com/DanielRepko" target="_blank">https://github.com/DanielRepko</a></h4>
 				<h4 id="linkedin">LinkedIn: <a href="https://www.linkedin.com/in/daniel-repko" target="_blank">https://www.linkedin.com/in/daniel-repko</a></h4>
-
 			</section>	
 		</header>	
 
@@ -58,7 +58,7 @@
 						was in this program where I, with the help of one other person, created my first ever full game (see Figure 1)
 						for the final capstone project. After finishing that, I decided I wanted to specialize more in video game 
 						specific programming, and so I left home to study at St. Lawrence college, enrolling in their Game Programming
-						course, from where I will graduate in April 2021.
+						course and graduating in April 2021.
 					</p>
 					<figure>
 						<figcaption id="monster_island_caption">Figure 1: Monster Island, my first full game</figcaption>
@@ -173,6 +173,21 @@
 						</div>
 					</figure>
 				</section>
+
+				<section class="three column centered row work_row">
+					<figure class="work_figure column">
+						<figcaption class="work_year">2021</figcaption>
+						<div href="" id="tourism_pursuit" class="work_link" onClick="loadTourismPursuit()">
+							<img src="previous_work_files/tourism_pursuit_photos/tourism_pursuit1.png" class="work_pic mobile" />
+							<div class="work_blurb mobile">
+								<h1>South Dundas Tourism Pursuit</h1>
+								<p class="work_desc tourism_pursuit mobile">
+									A tourism app that allows you to scan QR codes at certain tourist spots around South Dundas to unlock information and minigames.
+								</p>
+							</div>
+						</div>
+					</figure>
+				</section>
 			</section>
 
 
@@ -182,16 +197,16 @@
 				<ul class="five wide centered column">
 					<li>C#</li>
 					<li>C++</li>
+					<li>Unity</li>
 					<li>HTML & CSS</li>
-					<li>Javascript</li>
-					<li>Java</li>
+					<li>Javascript</li>					
 				</ul>
 
 
 
 				<ul class="eight wide centered column">
+					<li>Java</li>
 					<li>Swift</li>
-					<li>Unity</li>
 					<li>Xcode</li>
 					<li>Android Studio</li>
 					<li>Adobe Illustrator</li>
@@ -262,13 +277,15 @@
             var work_pics = document.getElementsByClassName("work_row");
             function workPicsMediaQuery(screen) {
                 if (screen.matches) {
-                    work_pics.item(0).setAttribute("class", "one column row work_row");
-                    work_pics.item(1).setAttribute("class", "one column row work_row");
-                    work_pics.item(2).setAttribute("class", "one column row work_row");
+					for(let item of work_pics)
+					{
+						item.setAttribute("class", "one column row work_row");
+					};
                 } else {
-                    work_pics.item(0).setAttribute("class", "three column centered row work_row");
-                    work_pics.item(1).setAttribute("class", "three column centered row work_row");
-                    work_pics.item(2).setAttribute("class", "three column centered row work_row");
+					for(let item of work_pics)
+					{
+						item.setAttribute("class", "three column centered row work_row");
+					};
                 }
             }
 
@@ -278,7 +295,3 @@
         </script>
 	</body>
 </html>
-
-
-<!-- this image was retrieved from "" -->
-<!-- <script src=""></script> -->
