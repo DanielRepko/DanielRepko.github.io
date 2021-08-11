@@ -22,3 +22,8 @@ function loadMonsterIsland() {
 function loadPoodPood() {
 	window.open("previous_work_files/previous_work.html", "pood_pood");
 }
+
+//loading the page and naming the window tourism_pursuit
+function loadTourismPursuit() {
+	window.open("previous_work_files/previous_work.html", "tourism_pursuit");
+}
