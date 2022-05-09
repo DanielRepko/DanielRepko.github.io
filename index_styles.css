@@ -33,13 +33,13 @@ body {
 /**************************************** Main Columns */
 
 #quickfind_column {
-	width: 30%;
+	width: 20%;
 	float: left;
 	background: #1e1e1e;
 }
 
 #main_column {
-	width: 70%;
+	width: 80%;
 	float: right;
 }
 
@@ -47,8 +47,8 @@ body {
 #quickfind_box{	
 	text-align: center;
 	position: fixed;
-	left: 1%;
-	right: 71%;
+	left: 0.5%;
+	right: 80%;
 	top: 16em;
 }
 
@@ -96,8 +96,6 @@ header {
 
 header h4{
 	display: inline-block;
-	margin-top: 1em;
-	margin-bottom: 1em;
 }
 
 #contact_email{
@@ -117,6 +115,8 @@ header h4{
 #header_title{
 	color: #345000;
 	font-size: 3em;
+	margin-top: .25em;
+	margin-bottom: .25em;
 }
 
 #header_contact_area{
@@ -129,8 +129,8 @@ header h4{
 }
 
 #header_is_compressed {
-	width: 30% !important;
-	margin-right: 70%;
+	width: 20% !important;
+	margin-right: 80%;
 	position: sticky !important;
 	position: -webkit-sticky !important;
 	top: 0;
@@ -152,6 +152,7 @@ header h4{
 #header_is_compressed h4{
 	font-size: .9em;
 	text-align: center;
+	display: block;
 }
 
 /**************************************** About Me */
@@ -164,7 +165,7 @@ header h4{
 }
 
 #personal_pic{
-	width: 24%;
+	width: 25.5%;
 	display: inline;
 	float: left;
 	margin: .5em;
@@ -319,7 +320,7 @@ br{
 /**************************************** Resume */
 #resume_iframe{
 	width: 100%;
-	height: 60em;
+	height: 40em;
 	border: none;
 }
 
@@ -360,112 +361,31 @@ footer{
 }
 
 /**************************************** Media Query */
-@media only screen and (max-width: 600px){     
-    #header_contact_area{
-        font-size: 3vw;
-    }
-
-	header h4 {
-		margin-left: 1% !important;
+@media only screen and (max-width: 1644px) {
+	#header_is_compressed h4 {
+		margin-top: .7em;
+		margin-bottom: .7em;
 	}
-    
-    .section_title{
-        text-align: center;
-    }
-    
-    .section_title::after{
-	   content: "\00a0\00a0";   
-    }
-
-	.section_title::before{
-	   content: "\00a0\00a0";   
-    }
-    
-    #tools_skills ul{
-       margin-right: 0;
-    }
-    
-    #work_experience h3,h4{
-        text-align: center;
-    }
-    
-    #work-experience ul{
-        text-align: left;
-    }
-    
-	.experience_date.normal_view{
-		display: none;
-	}
-
-	.experience_date.mobile_view {
-		display: block;
-	}
-    
+	
 }
 
+@media only screen and (max-width: 1606px) {
 
-@media only screen and (max-width: 500px) {
-	header h4{
-		font-size: .8em !important;
-	}
+	
 }
 
-@media only screen and (max-width: 650px){  
-    br{
-        display: block;
-    }
-
-	.work_blurb h1 {
-		font-size: 4vw !important;
-	}
-
-	.work_blurb.mobile h1 {
-		margin-top: 30%;
-	}
-    
-    .work_year {
-	   font-size: 3.5vw;
-    }
-
-	#about_me figure {
-		width: 45%;
-	}
-}
-
-@media only screen and (max-width: 900px) 
-{
-	.work_blurb h1{
-		margin-top: 20%;
-	}
-
-	.work_blurb.mobile h1 {
-		margin-top: 30%;
-	}
-
-	.work_desc{
-		display: none;
-	}
-}
-
-@media only screen and (max-width: 1310px){
+@media only screen and (max-width: 1410px) {
 	#header_is_compressed h4 {
 		font-size: 1vw;
-		text-align: center;
 	}
 }
 
-@media only screen and (max-width: 1080px) {
-	header h4 {
-		font-size: 1.4vw;
-	}
-}
-
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1190px) {
 	#quickfind_column {
 		display: none;
 	}
 
-	header{
+	header {
 		position: static !important;
 	}
 
@@ -499,5 +419,112 @@ footer{
 	.work_desc.pood_pood {
 		margin-top: 6%;
 		font-size: 1.3vw;
+	}
+}
+
+@media only screen and (max-width: 1095px) {
+	header h4 {
+		font-size: 1.4vw;
+	}
+}
+
+@media only screen and (max-width: 900px) 
+{
+	#personal_pic {
+		width: 40%;
+	}
+
+	#about_me figure {
+		float: right;
+		width: 40%;
+		margin: 0;
+	}
+
+	.work_blurb h1{
+		margin-top: 20%;
+	}
+
+	.work_blurb.mobile h1 {
+		margin-top: 30%;
+	}
+
+	.work_desc{
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 650px) {
+	br {
+		display: block;
+	}
+
+	.work_blurb h1 {
+		font-size: 4vw !important;
+	}
+
+	.work_blurb.mobile h1 {
+		margin-top: 30%;
+	}
+
+	.work_year {
+		font-size: 3.5vw;
+	}
+
+	#about_me figure {
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#header_contact_area {
+		font-size: 3vw;
+	}
+
+	header h4 {
+		margin-left: 1% !important;
+	}
+
+	.section_title {
+		text-align: center;
+	}
+
+	.section_title::after {
+		content: "\00a0\00a0";
+	}
+
+	.section_title::before {
+		content: "\00a0\00a0";
+	}
+
+	#personal_pic {
+		width: 50%;
+	}
+
+	#tools_skills ul {
+		margin-right: 0;
+	}
+
+	#work_experience h3, h4 {
+		text-align: center;
+	}
+
+	#work-experience ul {
+		text-align: left;
+	}
+
+	.experience_date.normal_view {
+		display: none;
+	}
+
+	.experience_date.mobile_view {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+
+	header h4 {
+		font-size: .8em !important;
 	}
 }
