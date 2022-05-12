@@ -201,12 +201,12 @@ function loadPoodPoodInfo(){
 	mainPic.setAttribute("class", "main_pic regular");	
 
 	//setting the project description
-	projectDescription.innerHTML = "Pood Pood is a past Unity school assignment turned side project. It is what I have coined as a \"top-down side-scrolling\" puzzle platformer. "+
-	"The main mechanic is that you can only move from left to right, unless you change the perspective to top-down, at which point you can move in any direction other than vertical, "+
-	"and you walk right over platforms that were previously too tall to jump over, as if the change in perspective has removed all depth. The catch is that there are certain platforms "+ 
-	"that you cannot walk over in top-down mode, and so the levels would be a mix of these different platforms, with the puzzle being how to get from one part of the level to the other "+
-	"by cleverly changing perspectives as needed. As of now it is little more than a tech demo, as I have only gotten as far as coding the perspective change as well as \"removing depth\" "+
-	"when in top-down mode.";
+	projectDescription.innerHTML = "Pood Pood is a past Unity school assignment turned side project. It is a 3D puzzle game where each level consists of various different platforms and a goal"+
+	" to which you must find a path. The main mechanic is that there are two different camera perspectives: first is normal 3D view that allows you to see and traverse the level like"+
+	" any other 3D platformer, and the second is a top-down view, which removes all vertical depth, allowing you to walk over platforms that were too high to jump over in 3D mode. The catch is that"+
+	" there are black platforms that you cannot walk over in top-down mode, and so the levels would be a mix of these different platforms, forcing you to use these two camera views to find a way to reach the goal."+
+	" As of now it is little more than a tech demo, as I have only gotten the basic functionality down for changing perspectives and restricting movement in top-down mode. My current goals are to fine tune the" +
+	" movement and mechanics, as well as learning how to create the levels in a way where the solution is not too obvious, but also not too complicated.";
 }  
 
 //filling the page with info for the pizza palace project
