@@ -292,11 +292,12 @@ br{
 	color: #6E932B;
 }
 
-#work_experience h3{
-	color: #74AD1D;
+#work_experience div {
+	margin-top: 1em;
+	margin-bottom: 0.5em;
 }
 
-#work_experience li{
+#work_experience li {
 	list-style: none;
 }
 
@@ -320,7 +321,7 @@ br{
 /**************************************** Resume */
 #resume_iframe{
 	width: 100%;
-	height: 40em;
+	height: 50em;
 	border: none;
 }
 
